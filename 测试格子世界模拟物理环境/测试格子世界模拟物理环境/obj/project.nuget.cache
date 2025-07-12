@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "/sfpw02ZPA8=",
+  "success": true,
+  "projectFilePath": "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\10059\\.nuget\\packages\\google.protobuf\\3.29.3\\google.protobuf.3.29.3.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\google.protobuf.tools\\3.29.2\\google.protobuf.tools.3.29.2.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\grpc\\2.46.6\\grpc.2.46.6.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\grpc.tools\\2.68.1\\grpc.tools.2.68.1.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\skiasharp.views.desktop.common\\2.88.9\\skiasharp.views.desktop.common.2.88.9.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\skiasharp.views.windowsforms\\2.88.9\\skiasharp.views.windowsforms.2.88.9.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\system.drawing.common\\4.7.3\\system.drawing.common.4.7.3.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\10059\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

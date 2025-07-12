@@ -1,0 +1,134 @@
+//使用的proto版本
+syntax="proto3";
+//导入空类型
+import "google/protobuf/empty.proto";
+
+//定义包名
+package gym_env;
+
+//算法类型
+enum AlgorithmType {
+    //DQN
+    DQN = 0;
+    //PPO
+    PPO = 1;
+    //A2C
+    A2C = 2;
+    //DDPG
+    DDPG = 3;
+    //SAC
+    SAC = 4;
+    //TD3
+    TD3 = 5;
+}
+
+//定义环境服务
+service Env {
+// 用于双向流通信，支持服务端主动发起 Reset、Step，客户端响应一次
+    rpc EnvInteraction (stream EnvMessage) returns (stream EnvMessage);
+    //重置环境请求
+//    rpc Reset (google.protobuf.Empty) returns (stream ResetResponse) {}
+    //发送动作
+//    rpc StepAction (Step) returns (StepResult) {}
+    //请求训练模型
+    rpc TrainingEnv (TrainingEnvRequest) returns (google.protobuf.Empty) {}
+    //请求动作
+    rpc RequestStepAction (ModelPredictActionRequest) returns (Step) {}
+    //关闭环境通知
+    rpc Close (google.protobuf.Empty) returns (google.protobuf.Empty) {}
+}
+
+// 包装所有交互消息
+message EnvMessage {
+    oneof payload {
+        ResetRequest reset_request = 1;
+        ResetResponse reset_response = 2;
+
+        Step step_request = 3;
+        StepResult step_response = 4;
+
+        TrainingEnd training_end_request = 5;
+        TrainingEnd training_end_response = 6;
+    }
+}
+
+// --- Reset ---
+message ResetRequest {
+    string env_id = 1; // 可选：用于区分环境实例
+}
+
+//训练结束
+message TrainingEnd {
+    bool is_end = 1; // 可选：用于区分环境实例
+}
+
+//使用模型预测动作请求
+message ModelPredictActionRequest {
+    //状态
+    repeated int32 observation = 3;
+}
+
+//重置环境请求回复
+message ResetResponse {
+    //观测空间
+    repeated int32 observation= 1;
+}
+
+//训练模式配置请求
+message TrainingEnvRequest {
+    //环境id
+    string env_id = 1;
+    //使用的算法
+    AlgorithmType algorithm = 2;
+    //策略
+    string policy = 3;
+    //学习率
+    float learningRate = 4;
+    //折扣因子
+    float gamma = 5;
+    //迭代次数
+    int32 totalTimeSteps = 6;
+    //设备
+    string device = 7;
+}
+
+//发送动作请求
+message Step {
+    //动作
+    repeated int32 action = 1;
+}
+
+//动作结果响应
+message StepResult {
+    //观测空间
+    repeated int32 observation = 1;
+    //奖励
+    float reward = 2;
+    //是否结束
+    bool terminated = 3;
+    //是否超时截断
+    bool truncated = 4;
+    //其他信息
+    map<string,string> info = 5;
+}
+
+//连续环境发送动作请求
+message SendStepContinuousActionNotify {
+    //动作
+    repeated float action = 1;
+}
+
+//连续动作结果响应
+message StepContinuousResultResponse {
+    //观测空间
+    repeated float observation = 1;
+    //奖励
+    float reward = 2;
+    //是否结束
+    bool terminated = 3;
+    //是否超时截断
+    bool truncated = 4;
+    //其他信息
+    map<string,string> info = 5;
+}
+

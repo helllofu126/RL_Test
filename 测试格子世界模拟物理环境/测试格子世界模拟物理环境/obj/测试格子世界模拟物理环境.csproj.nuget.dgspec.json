@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境.csproj": {}
+  },
+  "projects": {
+    "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境.csproj",
+        "projectName": "测试格子世界模拟物理环境",
+        "projectPath": "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境.csproj",
+        "packagesPath": "C:\\Users\\10059\\.nuget\\packages\\",
+        "outputPath": "F:\\demo\\MVST    c#\\demo\\其他练习\\测试格子世界模拟物理环境\\测试格子世界模拟物理环境\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "D:\\vs2022\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\10059\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.29.3, )"
+            },
+            "Google.Protobuf.Tools": {
+              "target": "Package",
+              "version": "[3.29.2, )"
+            },
+            "Grpc": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Grpc.Core.Api": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.68.1, )"
+            },
+            "OpenTK": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "OpenTK.GLControl": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.NativeAssets.Win32": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.NativeAssets.macOS": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.Views.Desktop.Common": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.Views.WindowsForms": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.3, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.5, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
